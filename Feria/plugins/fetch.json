@@ -1,0 +1,27 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.innoquant.moca.phonegap": {
+    "source": {
+      "type": "git",
+      "url": "https://github.com/mocaplatform/moca-phonegap-sdk.git",
+      "subdir": "MOCASDK"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-android-play-services-gradle-release": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-android-play-services-gradle-release"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
