@@ -23,7 +23,8 @@ module.exports.metadata =
     "com.innoquant.moca.phonegap": "2.6.0",
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-android-play-services-gradle-release": "1.1.4",
-    "cordova-plugin-android-permissions": "1.0.0"
+    "cordova-plugin-android-permissions": "1.0.0",
+    "cordova-plugin-geolocation": "3.0.0"
 }
 // BOTTOM OF METADATA
 });

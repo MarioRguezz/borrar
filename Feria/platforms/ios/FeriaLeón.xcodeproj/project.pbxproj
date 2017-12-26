@@ -33,6 +33,7 @@
 		AE3BF37F9C7B4DB1B91B0F2F /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC124F566AE44D9BFB6BBF3 /* PassKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F07F5D7255A74E54930715E6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0963D25B5E40E99C5E6ED5 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A613CBE472BC47FCB8D397FD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8BBB20E70C48D8B0CA9CDB /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		046E45B7F72749418D4C965A /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2695D6E4C3704C38BA04F4EF /* CDVLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		9EC124F566AE44D9BFB6BBF3 /* PassKit.framework */ = {isa = PBXFileReference; name = "PassKit.framework"; path = "System/Library/Frameworks/PassKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		DF0963D25B5E40E99C5E6ED5 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		BF8BBB20E70C48D8B0CA9CDB /* CoreBluetooth.framework */ = {isa = PBXFileReference; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		2695D6E4C3704C38BA04F4EF /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9ED8BD7864374E968707415E /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +275,8 @@
 				8C034ED5A9204242870C6EE1 /* MOCASerializable.h */,
 				0449EC01F89846BCBF8EA1B8 /* MOCAUser.h */,
 				818240DF3B8C412F97183656 /* MOCAZone.h */,
+				2695D6E4C3704C38BA04F4EF /* CDVLocation.m */,
+				9ED8BD7864374E968707415E /* CDVLocation.h */,
 			);
 			name = Plugins;
 			path = "FeriaLeón/Plugins";
@@ -389,6 +394,7 @@
 				401E3ED80F2040E28F039404 /* MOCAPluginEventsDelegate.m in Sources */,
 				711111498136416388D55F78 /* MOCAPluginCallbackMessage.m in Sources */,
 				E8DE9BDFCB6546229F208C7A /* MOCAAutoIntegration.m in Sources */,
+				046E45B7F72749418D4C965A /* CDVLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

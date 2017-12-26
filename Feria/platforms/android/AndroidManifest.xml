@@ -33,4 +33,6 @@
     <permission android:name="com.example.hello.permission.C2D_MESSAGE" android:protectionLevel="signature" />
     <permission android:name="com.example.hello.permission.MOCA_DATA" android:protectionLevel="signature" />
     <uses-permission android:name="com.example.hello.permission.MOCA_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" />
 </manifest>
