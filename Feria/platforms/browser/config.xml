@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.example.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>FeriaLeon</name>
+    <name>FeriaLeón</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -16,6 +16,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <gap:plugin name="org.apache.cordova.core.geolocation" />
     <preference name="moca_app_key" value="5dxgGsBRRSG8mW5fjsCR2w" />
     <preference name="moca_app_secret" value="txBuNG6plaVl1EYuCjVdlgsdBaI=" />
 </widget>

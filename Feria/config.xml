@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.example.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>FeriaLeon</name>
+    <name>FeriaLeón</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -27,10 +27,10 @@
     <preference name="moca_app_secret" value="txBuNG6plaVl1EYuCjVdlgsdBaI=" />
     <engine name="android" spec="^6.3.0" />
     <engine name="browser" spec="^5.0.1" />
-    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-    <plugin name="com.innoquant.moca.phonegap" spec="https://github.com/mocaplatform/moca-phonegap-sdk.git#:/MOCASDK" />
-    <plugin name="cordova-android-play-services-gradle-release" spec="^1.1.4">
-        <variable name="PLAY_SERVICES_VERSION" value="11.+" />
-    </plugin>
+    <gap:plugin name="org.apache.cordova.core.geolocation" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="com.innoquant.moca.phonegap" spec="https://github.com/mocaplatform/moca-phonegap-sdk.git" />
+    <plugin name="cordova-android-play-services-gradle-release" spec="~1.1.4" />
+    <plugin name="cordova-plugin-android-permissions" spec="~1.0.0" />
     <engine name="ios" spec="~4.5.4" />
 </widget>

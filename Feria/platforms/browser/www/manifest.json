@@ -1,8 +1,8 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "FeriaLeon",
-  "short_name": "FeriaLeon",
+  "name": "FeriaLeón",
+  "short_name": "FeriaLeón",
   "version": "com.example.hello",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "author": "Apache Cordova Team",

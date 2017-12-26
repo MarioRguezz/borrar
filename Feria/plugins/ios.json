@@ -13,6 +13,9 @@
     "cordova-android-play-services-gradle-release": {
       "PACKAGE_NAME": "com.example.hello"
     },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.example.hello"
+    },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.example.hello"
     }
