@@ -80,13 +80,22 @@ $$(document).on('pageInit', function (e) {
         $(".toolbar").hide();
         $(".sdasdsa").css("background-color", "#fc9a00 !important");
     }
-
-
-
-
-
-
 });
+
+var permissions = cordova.plugins.permissions;
+permissions.hasPermission(permissions.ACCESS_COARSE_LOCATION, function(status){
+  if (!status.hasPermission) {
+    permissions.requestPermission(permissions.ACCESS_COARSE_LOCATION, success, error);
+  }
+});
+
+function error() {
+  myApp.alert('Te recomenadamos dar permisos para acceder a tu ubicación');
+}
+
+function success( status ) {
+if( !status.hasPermission ) error();
+}
 
 // Option 2. Using live 'pageInit' event handlers for each page
 $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
