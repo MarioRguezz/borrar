@@ -26,6 +26,62 @@ body {
     }
 }
 
+
+/* ipad */
+@media screen and (min-width: 750px) {
+  .imagemenu {
+  width: 40% !important;
+  margin-bottom: 10% !important;
+  }
+
+#imagenid3{
+  margin-left: 172% !important;
+}
+
+.newmodal {
+  width: 100% !important;
+  margin-left: -50% !important;
+}
+
+.leftposition{
+}
+
+
+.external{
+  width: 13%;
+}
+  #myCarousel .left{
+    margin-left: -5% !important;
+  }
+}
+
+/* ipad pro*/
+@media screen and (min-width: 1020px) {
+  .imagemenu {
+  width: 30% !important;
+  margin-bottom: 10% !important;
+  }
+
+  .newmodal {
+    width: 100% !important;
+    margin-left: -50% !important;
+  }
+
+  #imagenid3{
+    margin-left: 252% !important;
+  }
+  .external{
+    width: 10%;
+  }
+
+  #myCarousel .left{
+    margin-left: -5% !important;
+  }
+
+
+}
+
+
 h1 {
     font-size:24px;
     font-weight:normal;
@@ -184,6 +240,15 @@ background-color: #00aef3;
 }
 
 
+.imagemenu1{
+  width: 72%;
+  display: block;
+  margin: auto;
+}
+
+
+
+
 .imagemenumain{
   width: 50%;
   display: block;
@@ -308,7 +373,7 @@ height: 40%;
 
 
 .titlegraficomenu{
-  margin-top: -14%;
+  margin-top: -12%;
   font-size: 0.8em;
   color: #FFF;
   text-align: center;
@@ -469,4 +534,42 @@ a:active{
 }
 .grayfont{
     color: #83858e;
+}
+
+
+
+/*modals*/
+
+.whitecolor{
+  color: #FFF !important;
+}
+.leftposition{
+  float: left;
+}
+
+.topmargin5{
+  margin-top:5%;
+}
+
+.newpadd{
+  padding:0 !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.centerimage{
+  display:block;
+  margin:auto;
+}
+
+td{
+  color: #FFF !important;
+  font-size: 0.7em;
+}
+
+.modalboost{
+  margin-top: -37% !important;
+  position: fixed !important;
+  bottom: 1 !important;
 }
