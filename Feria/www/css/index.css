@@ -47,6 +47,8 @@ body {
 }
 
 
+
+
 .external{
   width: 13%;
 }
@@ -217,7 +219,7 @@ background-color: #00aef3;
 
 .titles{
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: #FFF;
 }
 
@@ -334,6 +336,7 @@ background-color: #00aef3;
 
 .modal{
   top: 40% !important;
+  height: 70%;
 }
 
 #myCarousel .left{
