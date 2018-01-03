@@ -3,7 +3,7 @@
   "display": "standalone",
   "name": "Feria de León 2018",
   "short_name": "Feria de León 2018",
-  "version": "com.example.hello",
+  "version": "com.proxtopic.ferialeon",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "author": "Apache Cordova Team",
   "icons": [
