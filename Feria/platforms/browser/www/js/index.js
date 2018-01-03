@@ -71,6 +71,34 @@ $$(document).on('pageInit', function (e) {
       $("#imagenid").remove();
       $("#imagenid1").remove();
         $(".toolbar").hide();
+        $$("#myform").submit(function(e) {
+          e.preventDefault();
+          var datos = [];
+          datos.push($$("#nombre").val(), $$("#correo").val(), $$("#asunto").val(), $$("#mensaje").val());
+          $$.ajax({
+            type: "POST",
+            url: "http://apps.opion-tech.com/correoFeria.php",
+            contentType: "application/x-www-form-urlencoded",
+            data: {
+              data: datos
+            },
+            beforeSend: function() {
+              $$("#myform").hide();
+              $$("#body").append("<div id='loading' class='content-block' style='text-align: center'><span style='width:42px; height:42px' class='preloader'></span><h4>Espera por favor...</h4></div>");
+            },
+            success: function(response) {
+              myApp.alert("El correo se envió exitosamente", "MarcaGto");
+              $$("#myform")[0].reset();
+            },
+            error: function(error) {
+              myApp.alert("Ocurrió un error, intenta de nuevo", "MarcaGto")
+            },
+            complete: function() {
+              $$("#loading").remove();
+              $$("#myform").show();
+            }
+          });
+        });
     }
 
 
@@ -96,7 +124,7 @@ function error() {
 }
 
 function success( status ) {
-//if( !status.hasPermission ) error();
+  if( !status.hasPermission ) error();
 }
 
 // Option 2. Using live 'pageInit' event handlers for each page
