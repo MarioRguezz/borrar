@@ -71,6 +71,40 @@ $$(document).on('pageInit', function (e) {
       $("#imagenid").remove();
       $("#imagenid1").remove();
         $(".toolbar").hide();
+        $$("#myform").submit(function(e) {
+          e.preventDefault();
+          var datos = [];
+          datos.push($$("#nombre").val(), $$("#correo").val(), $$("#asunto").val(), $$("#mensaje").val());
+          $$.ajax({
+            type: "POST",
+            url: "http://.opion-tech.com/correoFeria.php", 
+            contentType: "application/x-www-form-urlencoded",
+            data: {
+              data: datos
+            },
+            beforeSend: function() {
+              $$("#myform").hide();
+              $$("#body").append("<div id='loading' class='content-block' style='text-align: center;'><span style='width:42px; height:42px' class='preloader'></span><h4>Espera por favor...</h4></div>");
+            },
+            success: function(response) {
+            //  myApp.addNotification("El correo se envió exitosamente", "Feria 2018");
+                  $('#ModalCenterPositive').modal('toggle');
+                  $('#ModalCenterPositive').modal('show');
+              $$("#myform")[0].reset();
+            },
+            error: function(error) {
+              $('#ModalCenterPositive').modal('toggle');
+              $('#ModalCenterPositive').modal('show');
+              $("#mensajemodal").empty();
+              $("#mensajemodal").append("Ocurrió un error, intenta de nuevo");
+            //  myApp.addNotification("Ocurrió un error, intenta de nuevo", "Feria 2018")
+            },
+            complete: function() {
+              $$("#loading").remove();
+              $$("#myform").show();
+            }
+          });
+        });
     }
 
 
@@ -96,7 +130,7 @@ function error() {
 }
 
 function success( status ) {
-//if( !status.hasPermission ) error();
+  if( !status.hasPermission ) error();
 }
 
 // Option 2. Using live 'pageInit' event handlers for each page
