@@ -16,7 +16,7 @@ var mainView = myApp.addView('.view-main', {
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
-    welcomescreen.open();
+    //welcomescreen.open();
 });
 
 
@@ -80,13 +80,24 @@ $$(document).on('pageInit', function (e) {
         $(".toolbar").hide();
         $(".sdasdsa").css("background-color", "#fc9a00 !important");
     }
-
-
-
-
-
-
+    var permissions = cordova.plugins.permissions;
+    permissions.hasPermission(permissions.ACCESS_COARSE_LOCATION, function(status){
+      if (!status.hasPermission) {
+        permissions.requestPermission(permissions.ACCESS_COARSE_LOCATION, success, error);
+      }
+    });
 });
+
+function error() {
+  myApp.addNotification({
+        title: 'Feria de León',
+        message: 'Te recomendamos dar permisos para acceder a tu ubicación'
+    });
+}
+
+function success( status ) {
+//if( !status.hasPermission ) error();
+}
 
 // Option 2. Using live 'pageInit' event handlers for each page
 $$(document).on('pageInit', '.page[data-page="about"]', function (e) {

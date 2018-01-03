@@ -4,7 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+<<<<<<< HEAD
 		<key>FeriaLeón.xcscheme_^#shared#^_</key>
+=======
+		<key>FeriaLeón.xcscheme_^#shared#^_</key>
+>>>>>>> 7b8f51e52b8a219b38977af2543cbd627c44f22e
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
