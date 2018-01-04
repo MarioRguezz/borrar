@@ -15,7 +15,9 @@ var mainView = myApp.addView('.view-main', {
 
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
-    console.log("Device is ready!");
+    //console.log("Device is ready!");
+    checkPermissions();
+    //checkBluetooth();
     //welcomescreen.open();
 });
 
@@ -77,7 +79,7 @@ $$(document).on('pageInit', function (e) {
           datos.push($$("#nombre").val(), $$("#correo").val(), $$("#asunto").val(), $$("#mensaje").val());
           $$.ajax({
             type: "POST",
-            url: "http://.opion-tech.com/correoFeria.php", 
+            url: "http://.opion-tech.com/correoFeria.php",
             contentType: "application/x-www-form-urlencoded",
             data: {
               data: datos
@@ -114,13 +116,17 @@ $$(document).on('pageInit', function (e) {
         $(".toolbar").hide();
         $(".sdasdsa").css("background-color", "#fc9a00 !important");
     }
-    var permissions = cordova.plugins.permissions;
-    permissions.hasPermission(permissions.ACCESS_COARSE_LOCATION, function(status){
-      if (!status.hasPermission) {
-        permissions.requestPermission(permissions.ACCESS_COARSE_LOCATION, success, error);
-      }
-    });
 });
+
+function checkPermissions(){
+  var permissions = cordova.plugins.permissions;
+  permissions.hasPermission(permissions.ACCESS_COARSE_LOCATION, function(status){
+    if (!status.hasPermission) {
+      permissions.requestPermission(permissions.ACCESS_COARSE_LOCATION, success, error);
+    }
+    checkBluetooth();
+  });
+}
 
 function error() {
   myApp.addNotification({
@@ -130,11 +136,28 @@ function error() {
 }
 
 function success( status ) {
-  if( !status.hasPermission ) error();
+  if( !status.hasPermission ){
+    error();
+  }
 }
 
-// Option 2. Using live 'pageInit' event handlers for each page
-$$(document).on('pageInit', '.page[data-page="about"]', function (e) {
-    // Following code will be executed for page with data-page attribute equal to "about"
-    myApp.alert('Here comes About page');
-});
+function checkBluetooth(){
+  cordova.plugins.diagnostic.isBluetoothEnabled(function(enabled){
+    if (!enabled) {
+      myApp.confirm('¿Podemos encender tu Bluetooth?', '', function () {
+        turnBluetooth();
+        }, function () {}
+      );
+    }
+  }, function(error){
+    myApp.alert('Ocurrió el error: '+ error);
+  });
+}
+
+function turnBluetooth(){
+  cordova.plugins.diagnostic.setBluetoothState(function(){
+      //console.log("Bluetooth was enabled");
+  }, function(error){
+      myApp.alert("Ocurrió un error, enciéndelo manualmente por favor");
+  }, true);
+}

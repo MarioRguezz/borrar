@@ -22,6 +22,9 @@
     },
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "com.proxtopic.ferialeon"
     }
   },
   "dependent_plugins": {}

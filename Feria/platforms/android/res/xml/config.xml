@@ -14,6 +14,10 @@
         <param name="android-package" value="com.innoquant.moca.phonegap.MOCAPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Diagnostic">
+        <param name="android-package" value="cordova.plugins.Diagnostic" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Feria de León 2018</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

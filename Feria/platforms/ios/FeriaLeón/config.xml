@@ -19,13 +19,6 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="MOCAPlugin">
-        <param name="ios-package" value="MOCAPlugin" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="Geolocation">
-        <param name="ios-package" value="CDVLocation" />
-    </feature>
     <name>Feria de León 2018</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
