@@ -124,7 +124,7 @@ function checkPermissions(){
     if (!status.hasPermission) {
       permissions.requestPermission(permissions.ACCESS_COARSE_LOCATION, success, error);
     }
-    checkBluetooth();
+    //checkBluetooth();
   });
 }
 

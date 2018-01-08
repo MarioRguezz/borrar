@@ -1,22 +1,24 @@
-
-<div class=" no-navbar no-toolbar  views">
-    <!-- Your main view, should have "view-main" class -->
-    <div class="view ">
-        <!-- Top Navbar-->
-        <div class="navbar theme-teal" style="background-color:#fe0077">
-            <div class="navbar-inner">
-              <div class="left sliding">
-                <a href="index.html"><img src="img/back.png" width=30> </a>
-                  <img id="imagenid3" src="img/letras.png" width=140 style="margin-left:55%;">
-              </div>
-            </div>
+<div class="views no-navbar no-toolbar">
+  <!-- Your main view, should have "view-main" class -->
+  <div class="view ">
+    <!-- Top Navbar-->
+    <div class="navbar theme-teal" style="background-color:#fe0077">
+      <div class="navbar-inner">
+        <div class="left sliding">
+          <a href="index.html"><img src="img/back.png" width=30> </a>
         </div>
-        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-        <div class="pages ">
+        <div class="center sliding">
+              <img id="imagenid1" src="img/letras.png" width=140>
+        </div>
+      </div>
+    </div>
+    <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+    <div class="pages ">
+      <!-- Page, "data-page" contains page name -->
             <!-- Page, "data-page" contains page name -->
-            <div data-page="contacto" class="page">
+            <div data-page="contacto" class="page no-toolbar">
                 <!-- Scrollable page content -->
-                <div class="page-content" style="background-color:white" id="body">
+                <div class="page-content"  id="body">
                   <div style="margin-top:70px;"></div>
                   <form id="myform" action="#" method="POST">
                     <div class="list-block inset">
@@ -24,7 +26,7 @@
                       <li>
                         <div class="item-content">
                           <div class="item-inner">
-                            <div class="item-title label">Nombre</div>
+                            <div style="color:#000;"class="item-title label">Nombre</div>
                             <div class="item-input">
                               <input type="text" name="nombre" placeholder="Tu nombre" id="nombre" required>
                             </div>
@@ -34,7 +36,7 @@
                       <li>
                         <div class="item-content">
                           <div class="item-inner">
-                            <div class="item-title label">Correo</div>
+                            <div style="color:#000;" class="item-title label">Correo</div>
                             <div class="item-input">
                               <input type="email" name="correo" placeholder="Tu correo" id="correo" required>
                             </div>
@@ -44,7 +46,7 @@
                       <li>
                         <div class="item-content">
                           <div class="item-inner">
-                            <div class="item-title label">Asunto</div>
+                            <div style="color:#000;" class="item-title label">Asunto</div>
                             <div class="item-input">
                               <input type="text" name="asunto" placeholder="Asunto" id="asunto" required>
                             </div>
@@ -54,7 +56,7 @@
                       <li>
                         <div class="item-content">
                           <div class="item-inner">
-                            <div class="item-title label">Mensaje</div>
+                            <div style="color:#000;" class="item-title label">Mensaje</div>
                             <div class="item-input">
                               <textarea class="resizable" name="mensaje" placeholder="Mensaje" id="mensaje" required></textarea>
                             </div>

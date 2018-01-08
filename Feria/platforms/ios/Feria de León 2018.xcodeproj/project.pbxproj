@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		02C21C1E2E0640948AA870C6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8676C6DCC2DE46DD89C63436 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		06893EEEF52C4E3CBE711F1C /* libMOCALib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6614DC56F02141A591BF497B /* libMOCALib.a */; };
+		11354565594446A1BFF11F75 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152E76CF3AA47CFB5132EEA /* libsqlite3.dylib */; };
+		1A4CCEC859804A6095B3C35D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBD5B7A42D34366BDFA63F9 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1BEFED69F8A44F6EBC096262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FE2AB554D1416E8C0C8C72 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1E141E2BBB78422BBFBC2648 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B5D3971C0849F594A074A6 /* PassKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		22F29F0C44D44F4484911429 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796848B695614732B7FD13BE /* EventKit.framework */; };
+		2D285A72145B43E29A9E3B15 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359AF0900A3C4CFEB6D8AF56 /* Contacts.framework */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		309D8495A03C464988754A1A /* MOCAPluginActionsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F21083D2004F179C02FBC7 /* MOCAPluginActionsDelegate.m */; };
+		38800494D05D49CBB214EEE3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5842B2736EAD4CBFB9C8E8C6 /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5D4CC72E6EFF4359B6E551DC /* MOCAPluginCallbackMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 29228A89DF7741ADB6FEFB69 /* MOCAPluginCallbackMessage.m */; };
+		6835FB90E24F467B97B74F21 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD5D8BE0B1B4ADFB4B01DF4 /* CoreMotion.framework */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		85B888083F334033B52DD758 /* MOCAPluginEventsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B630ACB199D4570B6424892 /* MOCAPluginEventsDelegate.m */; };
+		94398B6E9567416593858817 /* MOCAPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 653421FB247141108517D19C /* MOCAPlugin.m */; };
+		977A85E12C2F4393864DD136 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A1100A1F074186B1DF6274 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9BF0443CC2D64A60A8F877D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF50B3FE51F14422A51A7E00 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9C76BD26C0F641C184F89024 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3461891F5DF4B76BD96674C /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ACA522DD48264019AC2DC55A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003DBC8B7CDF4441BCCB4E75 /* CFNetwork.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ACCB283880FA4AFA9C852B7A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C261DEE2ACE443C6904763C0 /* AVFoundation.framework */; };
+		C3234D46F8E14FC3881B920B /* MOCAAutoIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1C6D022654112A28ED604 /* MOCAAutoIntegration.m */; };
+		CBB7A1971F8D442791B00D86 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E75E73AF334B24AB918262 /* AddressBook.framework */; };
+		D25F2E9990134F73BE005A82 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40384486AB20440CBFE9E5CD /* UserNotifications.framework */; };
+		E2104D062A874316A3161FDC /* Diagnostic.m in Sources */ = {isa = PBXBuildFile; fileRef = F450704A72EB477A96DD0C67 /* Diagnostic.m */; };
+		FCA47C1FF7D54B9C83170B08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC2AC88B74145AF8B957E45 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FE5B39FA96FC44B29115FBA4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4429EF345C466E9FD04D9D /* Photos.framework */; };
+		FEB53CD20A994A27904470DC /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D472719B41C041629DF6015B /* CDVLocation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		DE5D23692003134F00E54012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003DBC8B7CDF4441BCCB4E75 /* CFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Feria de León 2018/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		052F71D66C9C4581ABC8D1F7 /* MOCAPluginCallbackMessage.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAPluginCallbackMessage.h; path = com.innoquant.moca.phonegap/MOCAPluginCallbackMessage.h; sourceTree = "<group>"; };
+		0BCF6FA228BE475CB2CCA33A /* MOCAInbox.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAInbox.h; path = com.innoquant.moca.phonegap/MOCAInbox.h; sourceTree = "<group>"; };
+		12930D58A5B2496CBA19184F /* MOCAUser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAUser.h; path = com.innoquant.moca.phonegap/MOCAUser.h; sourceTree = "<group>"; };
+		18B5D3971C0849F594A074A6 /* PassKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		1AD5D8BE0B1B4ADFB4B01DF4 /* CoreMotion.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1B630ACB199D4570B6424892 /* MOCAPluginEventsDelegate.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MOCAPluginEventsDelegate.m; path = com.innoquant.moca.phonegap/MOCAPluginEventsDelegate.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Feria de León 2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feria de León 2018.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2649B9171AEB48BD80DFEEB9 /* MOCAProximityDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAProximityDelegate.h; path = com.innoquant.moca.phonegap/MOCAProximityDelegate.h; sourceTree = "<group>"; };
+		29228A89DF7741ADB6FEFB69 /* MOCAPluginCallbackMessage.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MOCAPluginCallbackMessage.m; path = com.innoquant.moca.phonegap/MOCAPluginCallbackMessage.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E7EBCC154FF4F6FA447DBCB /* MOCAPluginConstants.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAPluginConstants.h; path = com.innoquant.moca.phonegap/MOCAPluginConstants.h; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		30DA085401E847628730E6B4 /* MOCAIndoorClient.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAIndoorClient.h; path = com.innoquant.moca.phonegap/MOCAIndoorClient.h; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Feria de León 2018-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Feria de León 2018-Prefix.pch"; sourceTree = "<group>"; };
+		359AF0900A3C4CFEB6D8AF56 /* Contacts.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		376D319CF60041BABD0A9C46 /* MOCAConfig.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAConfig.h; path = com.innoquant.moca.phonegap/MOCAConfig.h; sourceTree = "<group>"; };
+		38A1100A1F074186B1DF6274 /* CoreTelephony.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		38F21083D2004F179C02FBC7 /* MOCAPluginActionsDelegate.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MOCAPluginActionsDelegate.m; path = com.innoquant.moca.phonegap/MOCAPluginActionsDelegate.m; sourceTree = "<group>"; };
+		3FE1C6D022654112A28ED604 /* MOCAAutoIntegration.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MOCAAutoIntegration.m; path = com.innoquant.moca.phonegap/MOCAAutoIntegration.m; sourceTree = "<group>"; };
+		40384486AB20440CBFE9E5CD /* UserNotifications.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		4152E76CF3AA47CFB5132EEA /* libsqlite3.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4639A2984D0642D6974807D0 /* MOCASegment.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCASegment.h; path = com.innoquant.moca.phonegap/MOCASegment.h; sourceTree = "<group>"; };
+		4DDC493EBCD84433B02D076A /* MOCAProximityService.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAProximityService.h; path = com.innoquant.moca.phonegap/MOCAProximityService.h; sourceTree = "<group>"; };
+		54572CDAAFA74E7FB6C011CF /* MOCAPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAPlugin.h; path = com.innoquant.moca.phonegap/MOCAPlugin.h; sourceTree = "<group>"; };
+		5842B2736EAD4CBFB9C8E8C6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		5AE6CB515D164189B9A9D26B /* MOCAAction.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAAction.h; path = com.innoquant.moca.phonegap/MOCAAction.h; sourceTree = "<group>"; };
+		5C271A3B8DDE45B6AE831BA0 /* MOCAPlace.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAPlace.h; path = com.innoquant.moca.phonegap/MOCAPlace.h; sourceTree = "<group>"; };
+		6270137C4302494CADF40BEC /* Diagnostic.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Diagnostic.h; path = cordova.plugins.diagnostic/Diagnostic.h; sourceTree = "<group>"; };
+		651DCAE0E7F848D48B39D39D /* MOCAZone.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAZone.h; path = com.innoquant.moca.phonegap/MOCAZone.h; sourceTree = "<group>"; };
+		653421FB247141108517D19C /* MOCAPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MOCAPlugin.m; path = com.innoquant.moca.phonegap/MOCAPlugin.m; sourceTree = "<group>"; };
+		6614DC56F02141A591BF497B /* libMOCALib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; name = libMOCALib.a; path = "Feria de León 2018/Plugins/com.innoquant.moca.phonegap/libMOCALib.a"; sourceTree = "<group>"; };
+		6AA3BD692E864B29BC7B194A /* CDVLocation.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "Feria de León 2018/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		796848B695614732B7FD13BE /* EventKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		7A09D0344A0C4609AF3E523D /* MOCAPluginEventsDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAPluginEventsDelegate.h; path = com.innoquant.moca.phonegap/MOCAPluginEventsDelegate.h; sourceTree = "<group>"; };
+		8337FD3C2E314EE4A080BC5E /* MOCABeacon.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCABeacon.h; path = com.innoquant.moca.phonegap/MOCABeacon.h; sourceTree = "<group>"; };
+		8676C6DCC2DE46DD89C63436 /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8A482EF1D41241E19CD226C7 /* MOCARecoClient.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCARecoClient.h; path = com.innoquant.moca.phonegap/MOCARecoClient.h; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Feria de León 2018-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Feria de León 2018-Info.plist"; path = "Feria de León 2018/Feria de León 2018-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		92FF46B714BB4B85B29B0946 /* MOCAPluginActionsDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAPluginActionsDelegate.h; path = com.innoquant.moca.phonegap/MOCAPluginActionsDelegate.h; sourceTree = "<group>"; };
+		95E75E73AF334B24AB918262 /* AddressBook.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		9E37502271FB4A6BBF1BFCCF /* MOCAEvent.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAEvent.h; path = com.innoquant.moca.phonegap/MOCAEvent.h; sourceTree = "<group>"; };
+		AB1E314388914BE9B7DA1277 /* MOCAPropertyContainer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAPropertyContainer.h; path = com.innoquant.moca.phonegap/MOCAPropertyContainer.h; sourceTree = "<group>"; };
+		ADBD5B7A42D34366BDFA63F9 /* CoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AF4429EF345C466E9FD04D9D /* Photos.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		C261DEE2ACE443C6904763C0 /* AVFoundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C3461891F5DF4B76BD96674C /* Security.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C80D0CBFA62F432B8603413F /* MOCAAutoIntegration.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAAutoIntegration.h; path = com.innoquant.moca.phonegap/MOCAAutoIntegration.h; sourceTree = "<group>"; };
+		D472719B41C041629DF6015B /* CDVLocation.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; };
+		DF255A15ED964E14BF3DC935 /* MOCALabel.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCALabel.h; path = com.innoquant.moca.phonegap/MOCALabel.h; sourceTree = "<group>"; };
+		DF50B3FE51F14422A51A7E00 /* UIKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E10B4A1A9CB340A3AE8A22B9 /* MOCAInstance.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCAInstance.h; path = com.innoquant.moca.phonegap/MOCAInstance.h; sourceTree = "<group>"; };
+		EB16147F8FB04C18BB44035B /* MOCALog.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCALog.h; path = com.innoquant.moca.phonegap/MOCALog.h; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		EC604009EBA749C9957163FF /* MOCASerializable.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCASerializable.h; path = com.innoquant.moca.phonegap/MOCASerializable.h; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F3FE2AB554D1416E8C0C8C72 /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F450704A72EB477A96DD0C67 /* Diagnostic.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = Diagnostic.m; path = cordova.plugins.diagnostic/Diagnostic.m; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Feria de León 2018/config.xml"; sourceTree = "<group>"; };
+		FC898F47CAE34D7699728153 /* MOCA.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MOCA.h; path = com.innoquant.moca.phonegap/MOCA.h; sourceTree = "<group>"; };
+		FDC2AC88B74145AF8B957E45 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				06893EEEF52C4E3CBE711F1C /* libMOCALib.a in Frameworks */,
+				11354565594446A1BFF11F75 /* libsqlite3.dylib in Frameworks */,
+				ACA522DD48264019AC2DC55A /* CFNetwork.framework in Frameworks */,
+				1BEFED69F8A44F6EBC096262 /* Foundation.framework in Frameworks */,
+				9C76BD26C0F641C184F89024 /* Security.framework in Frameworks */,
+				FCA47C1FF7D54B9C83170B08 /* SystemConfiguration.framework in Frameworks */,
+				9BF0443CC2D64A60A8F877D1 /* UIKit.framework in Frameworks */,
+				977A85E12C2F4393864DD136 /* CoreTelephony.framework in Frameworks */,
+				1A4CCEC859804A6095B3C35D /* CoreLocation.framework in Frameworks */,
+				1E141E2BBB78422BBFBC2648 /* PassKit.framework in Frameworks */,
+				02C21C1E2E0640948AA870C6 /* AudioToolbox.framework in Frameworks */,
+				38800494D05D49CBB214EEE3 /* CoreBluetooth.framework in Frameworks */,
+				6835FB90E24F467B97B74F21 /* CoreMotion.framework in Frameworks */,
+				ACCB283880FA4AFA9C852B7A /* AVFoundation.framework in Frameworks */,
+				FE5B39FA96FC44B29115FBA4 /* Photos.framework in Frameworks */,
+				CBB7A1971F8D442791B00D86 /* AddressBook.framework in Frameworks */,
+				22F29F0C44D44F4484911429 /* EventKit.framework in Frameworks */,
+				2D285A72145B43E29A9E3B15 /* Contacts.framework in Frameworks */,
+				D25F2E9990134F73BE005A82 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "Feria de León 2018/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Feria de León 2018.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Feria de León 2018-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "Feria de León 2018";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* Feria de León 2018-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+			);
+			name = Resources;
+			path = "Feria de León 2018/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6614DC56F02141A591BF497B /* libMOCALib.a */,
+				4152E76CF3AA47CFB5132EEA /* libsqlite3.dylib */,
+				003DBC8B7CDF4441BCCB4E75 /* CFNetwork.framework */,
+				F3FE2AB554D1416E8C0C8C72 /* Foundation.framework */,
+				C3461891F5DF4B76BD96674C /* Security.framework */,
+				FDC2AC88B74145AF8B957E45 /* SystemConfiguration.framework */,
+				DF50B3FE51F14422A51A7E00 /* UIKit.framework */,
+				38A1100A1F074186B1DF6274 /* CoreTelephony.framework */,
+				ADBD5B7A42D34366BDFA63F9 /* CoreLocation.framework */,
+				18B5D3971C0849F594A074A6 /* PassKit.framework */,
+				8676C6DCC2DE46DD89C63436 /* AudioToolbox.framework */,
+				5842B2736EAD4CBFB9C8E8C6 /* CoreBluetooth.framework */,
+				1AD5D8BE0B1B4ADFB4B01DF4 /* CoreMotion.framework */,
+				C261DEE2ACE443C6904763C0 /* AVFoundation.framework */,
+				AF4429EF345C466E9FD04D9D /* Photos.framework */,
+				95E75E73AF334B24AB918262 /* AddressBook.framework */,
+				796848B695614732B7FD13BE /* EventKit.framework */,
+				359AF0900A3C4CFEB6D8AF56 /* Contacts.framework */,
+				40384486AB20440CBFE9E5CD /* UserNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				DE5D236A2003134F00E54012 /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				653421FB247141108517D19C /* MOCAPlugin.m */,
+				38F21083D2004F179C02FBC7 /* MOCAPluginActionsDelegate.m */,
+				1B630ACB199D4570B6424892 /* MOCAPluginEventsDelegate.m */,
+				29228A89DF7741ADB6FEFB69 /* MOCAPluginCallbackMessage.m */,
+				3FE1C6D022654112A28ED604 /* MOCAAutoIntegration.m */,
+				54572CDAAFA74E7FB6C011CF /* MOCAPlugin.h */,
+				92FF46B714BB4B85B29B0946 /* MOCAPluginActionsDelegate.h */,
+				7A09D0344A0C4609AF3E523D /* MOCAPluginEventsDelegate.h */,
+				052F71D66C9C4581ABC8D1F7 /* MOCAPluginCallbackMessage.h */,
+				2E7EBCC154FF4F6FA447DBCB /* MOCAPluginConstants.h */,
+				C80D0CBFA62F432B8603413F /* MOCAAutoIntegration.h */,
+				FC898F47CAE34D7699728153 /* MOCA.h */,
+				5AE6CB515D164189B9A9D26B /* MOCAAction.h */,
+				8337FD3C2E314EE4A080BC5E /* MOCABeacon.h */,
+				376D319CF60041BABD0A9C46 /* MOCAConfig.h */,
+				9E37502271FB4A6BBF1BFCCF /* MOCAEvent.h */,
+				0BCF6FA228BE475CB2CCA33A /* MOCAInbox.h */,
+				30DA085401E847628730E6B4 /* MOCAIndoorClient.h */,
+				E10B4A1A9CB340A3AE8A22B9 /* MOCAInstance.h */,
+				DF255A15ED964E14BF3DC935 /* MOCALabel.h */,
+				EB16147F8FB04C18BB44035B /* MOCALog.h */,
+				5C271A3B8DDE45B6AE831BA0 /* MOCAPlace.h */,
+				AB1E314388914BE9B7DA1277 /* MOCAPropertyContainer.h */,
+				2649B9171AEB48BD80DFEEB9 /* MOCAProximityDelegate.h */,
+				4DDC493EBCD84433B02D076A /* MOCAProximityService.h */,
+				8A482EF1D41241E19CD226C7 /* MOCARecoClient.h */,
+				4639A2984D0642D6974807D0 /* MOCASegment.h */,
+				EC604009EBA749C9957163FF /* MOCASerializable.h */,
+				12930D58A5B2496CBA19184F /* MOCAUser.h */,
+				651DCAE0E7F848D48B39D39D /* MOCAZone.h */,
+				D472719B41C041629DF6015B /* CDVLocation.m */,
+				6AA3BD692E864B29BC7B194A /* CDVLocation.h */,
+				F450704A72EB477A96DD0C67 /* Diagnostic.m */,
+				6270137C4302494CADF40BEC /* Diagnostic.h */,
+			);
+			name = Plugins;
+			path = "Feria de León 2018/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Feria de León 2018 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Feria de León 2018" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "Feria de León 2018";
+			productName = "Feria de León 2018";
+			productReference = 1D6058910D05DD3D006BFB54 /* Feria de León 2018.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 2UHL99YQ5C;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Feria de León 2018" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Feria de León 2018 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DE5D236A2003134F00E54012 /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = DE5D23692003134F00E54012 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				94398B6E9567416593858817 /* MOCAPlugin.m in Sources */,
+				309D8495A03C464988754A1A /* MOCAPluginActionsDelegate.m in Sources */,
+				85B888083F334033B52DD758 /* MOCAPluginEventsDelegate.m in Sources */,
+				5D4CC72E6EFF4359B6E551DC /* MOCAPluginCallbackMessage.m in Sources */,
+				C3234D46F8E14FC3881B920B /* MOCAAutoIntegration.m in Sources */,
+				FEB53CD20A994A27904470DC /* CDVLocation.m in Sources */,
+				E2104D062A874316A3161FDC /* Diagnostic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 2UHL99YQ5C;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Feria de León 2018/Feria de León 2018-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Feria de León 2018/Feria de León 2018-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Feria de León 2018/Plugins/com.innoquant.moca.phonegap\"",
+				);
+				PRODUCT_NAME = "Feria de León 2018";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 2UHL99YQ5C;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Feria de León 2018/Feria de León 2018-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Feria de León 2018/Feria de León 2018-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Feria de León 2018/Plugins/com.innoquant.moca.phonegap\"",
+				);
+				PRODUCT_NAME = "Feria de León 2018";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Feria de León 2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Feria de León 2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

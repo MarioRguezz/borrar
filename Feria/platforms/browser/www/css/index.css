@@ -48,11 +48,20 @@ body {
 
 
 /* ipad */
+
 @media screen and (min-width: 750px) {
   .imagemenu {
-  width: 40% !important;
-  margin-bottom: 10% !important;
+  /*width: 40% !important;
+  margin-bottom: 10% !important;*/
+  width:100% !important;
   }
+  /*con imágenes*/
+    .graficomenu{
+    width: 40% !important;
+    margin-bottom: 10% !important;
+    float: right !important;
+    margin-right: 30%
+    }
 
 #imagenid3{
   margin-left: 172% !important;
@@ -60,7 +69,6 @@ body {
 
 .newmodal {
   width: 100% !important;
-  margin-left: -50% !important;
 }
 
 .leftposition{
@@ -80,13 +88,21 @@ body {
 /* ipad pro*/
 @media screen and (min-width: 1020px) {
   .imagemenu {
-  width: 30% !important;
-  margin-bottom: 10% !important;
+  /*width: 30% !important;
+  margin-bottom: 10% !important;*/
+  width: 100%;
   }
+
+  /*con imágenes*/
+    .graficomenu{
+    width: 40% !important;
+    margin-bottom: 10% !important;
+    float: right !important;
+    margin-right: 30%
+    }
 
   .newmodal {
     width: 100% !important;
-    margin-left: -50% !important;
   }
 
   #imagenid3{
@@ -120,6 +136,18 @@ h1 {
     font-size:12px;
     margin:0px 30px;
     padding:2px 0px;
+}
+
+.imageWrapper{
+  width: 100%;
+  height: auto;
+  max-width: 52px;
+}
+
+.imageWrapper2{
+  width: 100%;
+  height: auto;
+  max-width: 62px;
 }
 
 .event.listening {
@@ -161,7 +189,7 @@ bottom: 0;
 left: 0;
 width: 90%;
 height: 70%;
-background-color: #ccc;
+background-color: transparent;
 }
 
 .menu{
@@ -187,6 +215,10 @@ height: 75px;
 margin-left:  10px;
 margin-right:  10px;
 }
+
+
+
+
 
 .menu1{
 float: left;
@@ -237,6 +269,8 @@ background-color: #00aef3;
 }
 
 
+
+
 .titles{
   font-weight: bold;
   font-size: 1.2em;
@@ -256,7 +290,7 @@ background-color: #00aef3;
 }
 
 .imagemenu{
-  width: 77%;
+  width: 100%;
   display: block;
   margin: auto;
 }
@@ -289,6 +323,62 @@ background-color: #00aef3;
   float: right;
   margin-top: -10%
 }
+
+
+
+.menucontacto{
+float: left;
+width: 100%;
+height:20%;
+}
+
+.menusuperiores{
+float: left;
+width: 50%;
+height:20%;
+}
+
+.menusuperior{
+float: left;
+width: 50%;
+height:40%;
+}
+
+.menuexpositores{
+  float: left;
+  width: 100%;
+  height:20%;
+}
+
+
+.menucontactoa{
+float: left;
+width: 50%;
+height:20%;
+}
+
+.menuexpositoresa{
+  float: left;
+  width: 50%;
+  height:20%;
+}
+
+
+
+
+.menumapavirtual{
+  float: left;
+  width: 100%;
+  height:40%;
+}
+
+.menusuperiorimage{
+  float: left;
+  width: 100%;
+  height:40%;
+}
+
+
 
 .menuitem1{
   float: left;
@@ -357,6 +447,7 @@ background-color: #00aef3;
 .modal{
   top: 34% !important;
   height: 70%;
+  margin: auto;
 }
 
 #myCarousel .left{
@@ -391,7 +482,7 @@ margin-right: -7% !important;
 .graficomenu{
 float: left;
 width:100%;
-height: 40%;
+height: 30%;
 }
 
 
@@ -402,10 +493,10 @@ height: 40%;
   text-align: center;
 }
 
-
+/*
 .minheight{
-  height: 150px;
-}
+  /*height: 150px;
+}*/
 
 
 .multi-item-carousel{
