@@ -6,7 +6,7 @@ var mainView = myApp.addView('.view-main', {
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
     checkPermissions();
-    //checkBluetooth();
+    checkBluetooth();
 });
 
 $$(document).on('pageInit', function (e) {
@@ -81,7 +81,7 @@ function success( status ) {
     error();
   }
 }
-
+/*
 function checkBluetooth(){
   cordova.plugins.diagnostic.isBluetoothEnabled(function(enabled){
     if (!enabled) {
@@ -93,12 +93,19 @@ function checkBluetooth(){
   }, function(error){
     myApp.alert('Ocurrió el error: '+ error);
   });
-}
+}*/
 
+/*
 function turnBluetooth(){
   cordova.plugins.diagnostic.setBluetoothState(function(){
       //console.log("Bluetooth was enabled");
   }, function(error){
       myApp.alert("Ocurrió un error, enciéndelo manualmente por favor");
   }, true);
+}
+*/
+
+function checkBluetooth(){
+  $('#ModalCenterAceptar').modal('toggle');
+  $('#ModalCenterAceptar').modal('show');
 }

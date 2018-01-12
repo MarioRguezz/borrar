@@ -659,6 +659,17 @@ a:active{
   color: #3a7c5e;
 }
 
+.greenicon{
+  background-color: #387c3e !important;
+}
+
+.blueicon{
+  background-color: #101d67 !important;
+}
+
+.orangeicon{
+  background-color: #c75327 !important;
+}
 
 .titlegastronomia{
   color: #e6ad2a;
