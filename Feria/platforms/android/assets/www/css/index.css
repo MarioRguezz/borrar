@@ -22,6 +22,18 @@ a:focus{
 }
 
 
+@font-face {
+  font-family: 'Biko';
+  src: url('../font/Biko.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/Biko_Regular.otf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+* {
+  font-family: 'Biko' !important;
+}
+
+
+
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
@@ -635,6 +647,19 @@ a:active{
 }
 
 
+.bordergaleria{
+  border-bottom: 0px solid #3a7c5e;
+  border-top: 20px solid #3a7c5e;
+  border-left: 20px solid #3a7c5e;
+  border-right: 20px solid #3a7c5e;
+}
+
+
+.greeencolor{
+  color: #3a7c5e;
+}
+
+
 .titlegastronomia{
   color: #e6ad2a;
   font-weight: bold;
@@ -643,6 +668,13 @@ a:active{
 
 .titlegastronomiathin{
   color: #e6ad2a;
+  font-size: 1.5em !important;
+  text-align: center;
+}
+
+
+
+.titlegaleriathin{
   font-size: 1.5em !important;
   text-align: center;
 }
