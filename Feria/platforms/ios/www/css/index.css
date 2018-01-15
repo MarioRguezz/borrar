@@ -86,7 +86,9 @@ body {
 .leftposition{
 }
 
-
+.classipad{
+  width: 100%;
+}
 
 
 .external{
@@ -124,6 +126,9 @@ body {
     width: 10%;
   }
 
+  .classipad{
+    width: 100%;
+  }
   #myCarousel .left{
     margin-left: -5% !important;
   }
